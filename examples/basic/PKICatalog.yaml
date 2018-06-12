@@ -24,35 +24,49 @@ data:
           common_name: system:node:node0
           hosts:
             - node0
-            - 192.168.77.10
+            - 172.16.10.90
           groups:
             - system:nodes
         - document_name: kubelet-node0
           common_name: system:node:node0
           hosts:
             - node0
-            - 192.168.77.10
+            - 172.16.10.90
           groups:
             - system:nodes
         - document_name: kubelet-node1
           common_name: system:node:node1
           hosts:
             - node1
-            - 192.168.77.11
+            - 172.16.10.91
           groups:
             - system:nodes
         - document_name: kubelet-node2
           common_name: system:node:node2
           hosts:
             - node2
-            - 192.168.77.12
+            - 172.16.10.92
           groups:
             - system:nodes
         - document_name: kubelet-node4
           common_name: system:node:node4
           hosts:
             - node4
-            - 192.168.77.14
+            - 172.16.10.94
+          groups:
+            - system:nodes
+        - document_name: kubelet-node5
+          common_name: system:node:node5
+          hosts:
+            - node5
+            - 172.16.10.95
+          groups:
+            - system:nodes
+        - document_name: kubelet-node6
+          common_name: system:node:node6
+          hosts:
+            - node6
+            - 172.16.10.96
           groups:
             - system:nodes
         - document_name: scheduler
@@ -83,7 +97,7 @@ data:
           common_name: kubernetes-etcd-genesis
           hosts:
             - node0
-            - 192.168.77.10
+            - 172.16.10.90
             - 127.0.0.1
             - localhost
             - kubernetes-etcd.kube-system.svc.cluster.local
@@ -91,7 +105,7 @@ data:
           common_name: kubernetes-etcd-node0
           hosts:
             - node0
-            - 192.168.77.10
+            - 172.16.10.90
             - 127.0.0.1
             - localhost
             - kubernetes-etcd.kube-system.svc.cluster.local
@@ -99,7 +113,7 @@ data:
           common_name: kubernetes-etcd-node1
           hosts:
             - node1
-            - 192.168.77.11
+            - 172.16.10.91
             - 127.0.0.1
             - localhost
             - kubernetes-etcd.kube-system.svc.cluster.local
@@ -107,7 +121,7 @@ data:
           common_name: kubernetes-etcd-node2
           hosts:
             - node2
-            - 192.168.77.12
+            - 172.16.10.92
             - 127.0.0.1
             - localhost
             - kubernetes-etcd.kube-system.svc.cluster.local
@@ -115,7 +129,7 @@ data:
           common_name: kubernetes-etcd-node3
           hosts:
             - node3
-            - 192.168.77.13
+            - 172.16.10.93
             - 127.0.0.1
             - localhost
             - kubernetes-etcd.kube-system.svc.cluster.local
@@ -123,7 +137,23 @@ data:
           common_name: kubernetes-etcd-node4
           hosts:
             - node4
-            - 192.168.77.14
+            - 172.16.10.94
+            - 127.0.0.1
+            - localhost
+            - kubernetes-etcd.kube-system.svc.cluster.local
+        - document_name: kubernetes-etcd-node5
+          common_name: kubernetes-etcd-node5
+          hosts:
+            - node5
+            - 172.16.10.95
+            - 127.0.0.1
+            - localhost
+            - kubernetes-etcd.kube-system.svc.cluster.local
+        - document_name: kubernetes-etcd-node6
+          common_name: kubernetes-etcd-node6
+          hosts:
+            - node6
+            - 172.16.10.96
             - 127.0.0.1
             - localhost
             - kubernetes-etcd.kube-system.svc.cluster.local
@@ -133,7 +163,7 @@ data:
           common_name: kubernetes-etcd-genesis-peer
           hosts:
             - node0
-            - 192.168.77.10
+            - 172.16.10.90
             - 127.0.0.1
             - localhost
             - kubernetes-etcd.kube-system.svc.cluster.local
@@ -141,7 +171,7 @@ data:
           common_name: kubernetes-etcd-node0-peer
           hosts:
             - node0
-            - 192.168.77.10
+            - 172.16.10.90
             - 127.0.0.1
             - localhost
             - kubernetes-etcd.kube-system.svc.cluster.local
@@ -149,7 +179,7 @@ data:
           common_name: kubernetes-etcd-node1-peer
           hosts:
             - node1
-            - 192.168.77.11
+            - 172.16.10.91
             - 127.0.0.1
             - localhost
             - kubernetes-etcd.kube-system.svc.cluster.local
@@ -157,7 +187,7 @@ data:
           common_name: kubernetes-etcd-node2-peer
           hosts:
             - node2
-            - 192.168.77.12
+            - 172.16.10.92
             - 127.0.0.1
             - localhost
             - kubernetes-etcd.kube-system.svc.cluster.local
@@ -165,7 +195,7 @@ data:
           common_name: kubernetes-etcd-node3-peer
           hosts:
             - node3
-            - 192.168.77.13
+            - 172.16.10.93
             - 127.0.0.1
             - localhost
             - kubernetes-etcd.kube-system.svc.cluster.local
@@ -173,7 +203,23 @@ data:
           common_name: kubernetes-etcd-node4-peer
           hosts:
             - node4
-            - 192.168.77.14
+            - 172.16.10.94
+            - 127.0.0.1
+            - localhost
+            - kubernetes-etcd.kube-system.svc.cluster.local
+        - document_name: kubernetes-etcd-node5-peer
+          common_name: kubernetes-etcd-node5-peer
+          hosts:
+            - node5
+            - 172.16.10.95
+            - 127.0.0.1
+            - localhost
+            - kubernetes-etcd.kube-system.svc.cluster.local
+        - document_name: kubernetes-etcd-node6-peer
+          common_name: kubernetes-etcd-node6-peer
+          hosts:
+            - node6
+            - 172.16.10.96
             - 127.0.0.1
             - localhost
             - kubernetes-etcd.kube-system.svc.cluster.local
@@ -187,7 +233,7 @@ data:
           common_name: calico-etcd-node0
           hosts:
             - node0
-            - 192.168.77.10
+            - 172.16.10.90
             - 127.0.0.1
             - localhost
             - 10.96.232.136
@@ -195,7 +241,7 @@ data:
           common_name: calico-etcd-node1
           hosts:
             - node1
-            - 192.168.77.11
+            - 172.16.10.91
             - 127.0.0.1
             - localhost
             - 10.96.232.136
@@ -203,7 +249,7 @@ data:
           common_name: calico-etcd-node2
           hosts:
             - node2
-            - 192.168.77.12
+            - 172.16.10.92
             - 127.0.0.1
             - localhost
             - 10.96.232.136
@@ -211,7 +257,7 @@ data:
           common_name: calico-etcd-node3
           hosts:
             - node3
-            - 192.168.77.13
+            - 172.16.10.93
             - 127.0.0.1
             - localhost
             - 10.96.232.136
@@ -219,7 +265,23 @@ data:
           common_name: calico-etcd-node4
           hosts:
             - node4
-            - 192.168.77.14
+            - 172.16.10.94
+            - 127.0.0.1
+            - localhost
+            - 10.96.232.136
+        - document_name: calico-etcd-node5
+          common_name: calico-etcd-node5
+          hosts:
+            - node5
+            - 172.16.10.95
+            - 127.0.0.1
+            - localhost
+            - 10.96.232.136
+        - document_name: calico-etcd-node6
+          common_name: calico-etcd-node6
+          hosts:
+            - node6
+            - 172.16.10.96
             - 127.0.0.1
             - localhost
             - 10.96.232.136
@@ -232,7 +294,7 @@ data:
           common_name: calico-etcd-node0-peer
           hosts:
             - node0
-            - 192.168.77.10
+            - 172.16.10.90
             - 127.0.0.1
             - localhost
             - 10.96.232.136
@@ -240,7 +302,7 @@ data:
           common_name: calico-etcd-node1-peer
           hosts:
             - node1
-            - 192.168.77.11
+            - 172.16.10.91
             - 127.0.0.1
             - localhost
             - 10.96.232.136
@@ -248,7 +310,7 @@ data:
           common_name: calico-etcd-node2-peer
           hosts:
             - node2
-            - 192.168.77.12
+            - 172.16.10.92
             - 127.0.0.1
             - localhost
             - 10.96.232.136
@@ -256,7 +318,7 @@ data:
           common_name: calico-etcd-node3-peer
           hosts:
             - node3
-            - 192.168.77.13
+            - 172.16.10.93
             - 127.0.0.1
             - localhost
             - 10.96.232.136
@@ -264,7 +326,23 @@ data:
           common_name: calico-etcd-node4-peer
           hosts:
             - node4
-            - 192.168.77.14
+            - 172.16.10.94
+            - 127.0.0.1
+            - localhost
+            - 10.96.232.136
+        - document_name: calico-etcd-node5-peer
+          common_name: calico-etcd-node5-peer
+          hosts:
+            - node5
+            - 172.16.10.95
+            - 127.0.0.1
+            - localhost
+            - 10.96.232.136
+        - document_name: calico-etcd-node6-peer
+          common_name: calico-etcd-node6-peer
+          hosts:
+            - node6
+            - 172.16.10.96
             - 127.0.0.1
             - localhost
             - 10.96.232.136

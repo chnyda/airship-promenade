@@ -8,8 +8,8 @@ metadata:
     layer: site
 data:
   hostname: node0
-  ip: 192.168.77.10
-  join_ip: 192.168.77.11
+  ip: 172.16.10.90
+  join_ip: 172.16.10.91
   labels:
     dynamic:
       - ucp-control-plane=enabled
@@ -23,8 +23,8 @@ metadata:
     layer: site
 data:
   hostname: node1
-  ip: 192.168.77.11
-  join_ip: 192.168.77.10
+  ip: 172.16.10.91
+  join_ip: 172.16.10.90
   labels:
     dynamic:
       - calico-etcd=enabled
@@ -43,8 +43,8 @@ metadata:
     layer: site
 data:
   hostname: node2
-  ip: 192.168.77.12
-  join_ip: 192.168.77.10
+  ip: 172.16.10.92
+  join_ip: 172.16.10.90
   labels:
     dynamic:
       - calico-etcd=enabled
@@ -63,8 +63,8 @@ metadata:
     layer: site
 data:
   hostname: node3
-  ip: 192.168.77.13
-  join_ip: 192.168.77.11
+  ip: 172.16.10.93
+  join_ip: 172.16.10.91
   labels:
     dynamic:
       - calico-etcd=enabled
@@ -83,8 +83,48 @@ metadata:
     layer: site
 data:
   hostname: node4
-  ip: 192.168.77.14
-  join_ip: 192.168.77.10
+  ip: 172.16.10.94
+  join_ip: 172.16.10.90
+  labels:
+    dynamic:
+      - calico-etcd=enabled
+      - kubernetes-apiserver=enabled
+      - kubernetes-controller-manager=enabled
+      - kubernetes-etcd=enabled
+      - kubernetes-scheduler=enabled
+      - ucp-control-plane=enabled
+---
+schema: promenade/KubernetesNode/v1
+metadata:
+  schema: metadata/Document/v1
+  name: node5
+  layeringDefinition:
+    abstract: false
+    layer: site
+data:
+  hostname: node5
+  ip: 172.16.10.95
+  join_ip: 172.16.10.90
+  labels:
+    dynamic:
+      - calico-etcd=enabled
+      - kubernetes-apiserver=enabled
+      - kubernetes-controller-manager=enabled
+      - kubernetes-etcd=enabled
+      - kubernetes-scheduler=enabled
+      - ucp-control-plane=enabled
+---
+schema: promenade/KubernetesNode/v1
+metadata:
+  schema: metadata/Document/v1
+  name: node6
+  layeringDefinition:
+    abstract: false
+    layer: site
+data:
+  hostname: node6
+  ip: 172.16.10.96
+  join_ip: 172.16.10.90
   labels:
     dynamic:
       - calico-etcd=enabled

@@ -381,6 +381,65 @@ metadata:
       dest:
         path: '.values.nodes[4].tls.peer.key'
 
+    -
+      src:
+        schema: deckhand/Certificate/v1
+        name: calico-etcd-node5
+        path: .
+      dest:
+        path: '.values.nodes[5].tls.client.cert'
+    -
+      src:
+        schema: deckhand/CertificateKey/v1
+        name: calico-etcd-node5
+        path: .
+      dest:
+        path: '.values.nodes[5].tls.client.key'
+    -
+      src:
+        schema: deckhand/Certificate/v1
+        name: calico-etcd-node5-peer
+        path: .
+      dest:
+        path: '.values.nodes[5].tls.peer.cert'
+    -
+      src:
+        schema: deckhand/CertificateKey/v1
+        name: calico-etcd-node5-peer
+        path: .
+      dest:
+        path: '.values.nodes[5].tls.peer.key'
+
+    -
+      src:
+        schema: deckhand/Certificate/v1
+        name: calico-etcd-node6
+        path: .
+      dest:
+        path: '.values.nodes[6].tls.client.cert'
+    -
+      src:
+        schema: deckhand/CertificateKey/v1
+        name: calico-etcd-node6
+        path: .
+      dest:
+        path: '.values.nodes[6].tls.client.key'
+    -
+      src:
+        schema: deckhand/Certificate/v1
+        name: calico-etcd-node6-peer
+        path: .
+      dest:
+        path: '.values.nodes[6].tls.peer.cert'
+    -
+      src:
+        schema: deckhand/CertificateKey/v1
+        name: calico-etcd-node6-peer
+        path: .
+      dest:
+        path: '.values.nodes[6].tls.peer.key'
+
+
 data:
   chart_name: etcd
   release: calico-etcd
@@ -453,6 +512,22 @@ data:
             cert: placeholder
             key: placeholder
       - name: node4
+        tls:
+          client:
+            cert: placeholder
+            key: placeholder
+          peer:
+            cert: placeholder
+            key: placeholder
+      - name: node5
+        tls:
+          client:
+            cert: placeholder
+            key: placeholder
+          peer:
+            cert: placeholder
+            key: placeholder
+      - name: node6
         tls:
           client:
             cert: placeholder
@@ -547,7 +622,7 @@ data:
         CLUSTER_TYPE:
           - k8s
           - bgp
-        IP_AUTODETECTION_METHOD: interface=eth1
+        IP_AUTODETECTION_METHOD: interface=ens3
         WAIT_FOR_STORAGE: "true"
 
     endpoints:
@@ -1102,6 +1177,64 @@ metadata:
       dest:
         path: '.values.nodes[4].tls.peer.key'
 
+    -
+      src:
+        schema: deckhand/Certificate/v1
+        name: kubernetes-etcd-node5
+        path: .
+      dest:
+        path: '.values.nodes[5].tls.client.cert'
+    -
+      src:
+        schema: deckhand/CertificateKey/v1
+        name: kubernetes-etcd-node5
+        path: .
+      dest:
+        path: '.values.nodes[5].tls.client.key'
+    -
+      src:
+        schema: deckhand/Certificate/v1
+        name: kubernetes-etcd-node5-peer
+        path: .
+      dest:
+        path: '.values.nodes[5].tls.peer.cert'
+    -
+      src:
+        schema: deckhand/CertificateKey/v1
+        name: kubernetes-etcd-node5-peer
+        path: .
+      dest:
+        path: '.values.nodes[5].tls.peer.key'
+
+    -
+      src:
+        schema: deckhand/Certificate/v1
+        name: kubernetes-etcd-node6
+        path: .
+      dest:
+        path: '.values.nodes[6].tls.client.cert'
+    -
+      src:
+        schema: deckhand/CertificateKey/v1
+        name: kubernetes-etcd-node6
+        path: .
+      dest:
+        path: '.values.nodes[6].tls.client.key'
+    -
+      src:
+        schema: deckhand/Certificate/v1
+        name: kubernetes-etcd-node6-peer
+        path: .
+      dest:
+        path: '.values.nodes[6].tls.peer.cert'
+    -
+      src:
+        schema: deckhand/CertificateKey/v1
+        name: kubernetes-etcd-node6-peer
+        path: .
+      dest:
+        path: '.values.nodes[6].tls.peer.key'
+
 data:
   chart_name: etcd
   release: kubernetes-etcd
@@ -1170,6 +1303,22 @@ data:
             cert: placeholder
             key: placeholder
       - name: node4
+        tls:
+          client:
+            cert: placeholder
+            key: placeholder
+          peer:
+            cert: placeholder
+            key: placeholder
+      - name: node5
+        tls:
+          client:
+            cert: placeholder
+            key: placeholder
+          peer:
+            cert: placeholder
+            key: placeholder
+      - name: node6
         tls:
           client:
             cert: placeholder
