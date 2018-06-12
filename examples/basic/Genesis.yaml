@@ -7,7 +7,7 @@ metadata:
     abstract: false
     layer: site
 data:
-  hostname: n0
+  hostname: node0
   ip: 192.168.77.10
   armada:
     target_manifest: cluster-bootstrap
