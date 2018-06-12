@@ -547,7 +547,7 @@ data:
         CLUSTER_TYPE:
           - k8s
           - bgp
-        IP_AUTODETECTION_METHOD: interface=ens3
+        IP_AUTODETECTION_METHOD: interface=eth1
         WAIT_FOR_STORAGE: "true"
 
     endpoints:
