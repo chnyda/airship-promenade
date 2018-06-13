@@ -9,7 +9,7 @@ metadata:
   storagePolicy: cleartext
 data:
   hostname: n0
-  ip: 192.168.77.10
+  ip: 172.16.10.90
   armada:
     target_manifest: cluster-bootstrap
   labels:

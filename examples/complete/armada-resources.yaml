@@ -1493,8 +1493,8 @@ data:
       ceph_mon:
         namespace: ceph
     network:
-      public: 192.168.77.0/24
-      cluster: 192.168.77.0/24
+      public: 172.16.10.0/24
+      cluster: 172.16.10.0/24
     deployment:
       storage_secrets: true
       ceph: true
@@ -1589,8 +1589,8 @@ data:
       ceph_mon:
         namespace: ceph
     network:
-      public: 192.168.77.0/24
-      cluster: 192.168.77.0/24
+      public: 172.16.10.0/24
+      cluster: 172.16.10.0/24
     deployment:
       storage_secrets: false
       ceph: false
@@ -1824,13 +1824,13 @@ data:
           port: 31900
     conf:
       drydock:
-        bootaction_url: http://192.168.77.10:31000/api/v1.0/bootactions/nodes/
+        bootaction_url: http://172.16.10.90:31000/api/v1.0/bootactions/nodes/
       maas:
         credentials:
           secret:
             namespace: ucp
         url:
-          maas_url: http://192.168.77.10:31900/MAAS
+          maas_url: http://172.16.10.90:31900/MAAS
         proxy:
           proxy_enabled: 'false'
         ntp:
@@ -2084,7 +2084,7 @@ data:
     conf:
       drydock:
         maasdriver:
-          maas_api_url: http://192.168.77.10:31900/MAAS/api/2.0/
+          maas_api_url: http://172.16.10.90:31900/MAAS/api/2.0/
         plugins:
           ingester: drydock_provisioner.ingester.plugins.yaml.YamlIngester
   source:
