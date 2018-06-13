@@ -366,6 +366,122 @@ metadata:
       dest:
         path: '.values.nodes[3].tls.peer.key'
 
+    -
+      src:
+        schema: deckhand/Certificate/v1
+        name: calico-etcd-n4
+        path: .
+      dest:
+        path: '.values.nodes[4].tls.client.cert'
+    -
+      src:
+        schema: deckhand/CertificateKey/v1
+        name: calico-etcd-n4
+        path: .
+      dest:
+        path: '.values.nodes[4].tls.client.key'
+    -
+      src:
+        schema: deckhand/Certificate/v1
+        name: calico-etcd-n4-peer
+        path: .
+      dest:
+        path: '.values.nodes[4].tls.peer.cert'
+    -
+      src:
+        schema: deckhand/CertificateKey/v1
+        name: calico-etcd-n4-peer
+        path: .
+      dest:
+        path: '.values.nodes[4].tls.peer.key'
+
+    -
+      src:
+        schema: deckhand/Certificate/v1
+        name: calico-etcd-n5
+        path: .
+      dest:
+        path: '.values.nodes[5].tls.client.cert'
+    -
+      src:
+        schema: deckhand/CertificateKey/v1
+        name: calico-etcd-n5
+        path: .
+      dest:
+        path: '.values.nodes[5].tls.client.key'
+    -
+      src:
+        schema: deckhand/Certificate/v1
+        name: calico-etcd-n5-peer
+        path: .
+      dest:
+        path: '.values.nodes[5].tls.peer.cert'
+    -
+      src:
+        schema: deckhand/CertificateKey/v1
+        name: calico-etcd-n5-peer
+        path: .
+      dest:
+        path: '.values.nodes[5].tls.peer.key'
+
+    -
+      src:
+        schema: deckhand/Certificate/v1
+        name: calico-etcd-n6
+        path: .
+      dest:
+        path: '.values.nodes[6].tls.client.cert'
+    -
+      src:
+        schema: deckhand/CertificateKey/v1
+        name: calico-etcd-n6
+        path: .
+      dest:
+        path: '.values.nodes[6].tls.client.key'
+    -
+      src:
+        schema: deckhand/Certificate/v1
+        name: calico-etcd-n6-peer
+        path: .
+      dest:
+        path: '.values.nodes[6].tls.peer.cert'
+    -
+      src:
+        schema: deckhand/CertificateKey/v1
+        name: calico-etcd-n6-peer
+        path: .
+      dest:
+        path: '.values.nodes[6].tls.peer.key'
+
+    -
+      src:
+        schema: deckhand/Certificate/v1
+        name: calico-etcd-n7
+        path: .
+      dest:
+        path: '.values.nodes[7].tls.client.cert'
+    -
+      src:
+        schema: deckhand/CertificateKey/v1
+        name: calico-etcd-n7
+        path: .
+      dest:
+        path: '.values.nodes[7].tls.client.key'
+    -
+      src:
+        schema: deckhand/Certificate/v1
+        name: calico-etcd-n7-peer
+        path: .
+      dest:
+        path: '.values.nodes[7].tls.peer.cert'
+    -
+      src:
+        schema: deckhand/CertificateKey/v1
+        name: calico-etcd-n7-peer
+        path: .
+      dest:
+        path: '.values.nodes[7].tls.peer.key'
+
 data:
   chart_name: etcd
   release: calico-etcd
@@ -430,6 +546,39 @@ data:
             key: placeholder
       # n3 is here to demonstrate movability of the cluster
       - name: n3
+        tls:
+          client:
+            cert: placeholder
+            key: placeholder
+          peer:
+            cert: placeholder
+            key: placeholder
+      # added nodes
+      - name: n4
+        tls:
+          client:
+            cert: placeholder
+            key: placeholder
+          peer:
+            cert: placeholder
+            key: placeholder
+      - name: n5
+        tls:
+          client:
+            cert: placeholder
+            key: placeholder
+          peer:
+            cert: placeholder
+            key: placeholder
+      - name: n6
+        tls:
+          client:
+            cert: placeholder
+            key: placeholder
+          peer:
+            cert: placeholder
+            key: placeholder
+      - name: n7
         tls:
           client:
             cert: placeholder
@@ -1045,6 +1194,122 @@ metadata:
       dest:
         path: '.values.nodes[3].tls.peer.key'
 
+    -
+      src:
+        schema: deckhand/Certificate/v1
+        name: kubernetes-etcd-n4
+        path: .
+      dest:
+        path: '.values.nodes[4].tls.client.cert'
+    -
+      src:
+        schema: deckhand/CertificateKey/v1
+        name: kubernetes-etcd-n4
+        path: .
+      dest:
+        path: '.values.nodes[4].tls.client.key'
+    -
+      src:
+        schema: deckhand/Certificate/v1
+        name: kubernetes-etcd-n4-peer
+        path: .
+      dest:
+        path: '.values.nodes[4].tls.peer.cert'
+    -
+      src:
+        schema: deckhand/CertificateKey/v1
+        name: kubernetes-etcd-n4-peer
+        path: .
+      dest:
+        path: '.values.nodes[4].tls.peer.key'
+
+    -
+      src:
+        schema: deckhand/Certificate/v1
+        name: kubernetes-etcd-n5
+        path: .
+      dest:
+        path: '.values.nodes[5].tls.client.cert'
+    -
+      src:
+        schema: deckhand/CertificateKey/v1
+        name: kubernetes-etcd-n5
+        path: .
+      dest:
+        path: '.values.nodes[5].tls.client.key'
+    -
+      src:
+        schema: deckhand/Certificate/v1
+        name: kubernetes-etcd-n5-peer
+        path: .
+      dest:
+        path: '.values.nodes[5].tls.peer.cert'
+    -
+      src:
+        schema: deckhand/CertificateKey/v1
+        name: kubernetes-etcd-n5-peer
+        path: .
+      dest:
+        path: '.values.nodes[5].tls.peer.key'
+
+    -
+      src:
+        schema: deckhand/Certificate/v1
+        name: kubernetes-etcd-n6
+        path: .
+      dest:
+        path: '.values.nodes[6].tls.client.cert'
+    -
+      src:
+        schema: deckhand/CertificateKey/v1
+        name: kubernetes-etcd-n6
+        path: .
+      dest:
+        path: '.values.nodes[6].tls.client.key'
+    -
+      src:
+        schema: deckhand/Certificate/v1
+        name: kubernetes-etcd-n6-peer
+        path: .
+      dest:
+        path: '.values.nodes[6].tls.peer.cert'
+    -
+      src:
+        schema: deckhand/CertificateKey/v1
+        name: kubernetes-etcd-n6-peer
+        path: .
+      dest:
+        path: '.values.nodes[6].tls.peer.key'
+
+    -
+      src:
+        schema: deckhand/Certificate/v1
+        name: kubernetes-etcd-n7
+        path: .
+      dest:
+        path: '.values.nodes[7].tls.client.cert'
+    -
+      src:
+        schema: deckhand/CertificateKey/v1
+        name: kubernetes-etcd-n7
+        path: .
+      dest:
+        path: '.values.nodes[7].tls.client.key'
+    -
+      src:
+        schema: deckhand/Certificate/v1
+        name: kubernetes-etcd-n7-peer
+        path: .
+      dest:
+        path: '.values.nodes[7].tls.peer.cert'
+    -
+      src:
+        schema: deckhand/CertificateKey/v1
+        name: kubernetes-etcd-n7-peer
+        path: .
+      dest:
+        path: '.values.nodes[7].tls.peer.key'
+
 data:
   chart_name: etcd
   release: kubernetes-etcd
@@ -1105,6 +1370,38 @@ data:
             cert: placeholder
             key: placeholder
       - name: n3
+        tls:
+          client:
+            cert: placeholder
+            key: placeholder
+          peer:
+            cert: placeholder
+            key: placeholder
+      - name: n4
+        tls:
+          client:
+            cert: placeholder
+            key: placeholder
+          peer:
+            cert: placeholder
+            key: placeholder
+      - name: n5
+        tls:
+          client:
+            cert: placeholder
+            key: placeholder
+          peer:
+            cert: placeholder
+            key: placeholder
+      - name: n6
+        tls:
+          client:
+            cert: placeholder
+            key: placeholder
+          peer:
+            cert: placeholder
+            key: placeholder
+      - name: n7
         tls:
           client:
             cert: placeholder

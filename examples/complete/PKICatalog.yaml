@@ -55,6 +55,34 @@ data:
             - 192.168.77.13
           groups:
             - system:nodes
+        - document_name: kubelet-n4
+          common_name: system:node:n4
+          hosts:
+            - n4
+            - 194.168.77.14
+          groups:
+            - system:nodes
+        - document_name: kubelet-n5
+          common_name: system:node:n5
+          hosts:
+            - n5
+            - 195.168.77.15
+          groups:
+            - system:nodes
+        - document_name: kubelet-n6
+          common_name: system:node:n6
+          hosts:
+            - n6
+            - 196.168.77.16
+          groups:
+            - system:nodes
+        - document_name: kubelet-n7
+          common_name: system:node:n7
+          hosts:
+            - n7
+            - 197.168.77.17
+          groups:
+            - system:nodes
         - document_name: scheduler
           description: Service certificate for Kubernetes scheduler
           common_name: system:kube-scheduler
@@ -119,6 +147,38 @@ data:
             - 127.0.0.1
             - localhost
             - kubernetes-etcd.kube-system.svc.cluster.local
+        - document_name: kubernetes-etcd-n4
+          common_name: kubernetes-etcd-n4
+          hosts:
+            - n4
+            - 194.168.77.14
+            - 127.0.0.1
+            - localhost
+            - kubernetes-etcd.kube-system.svc.cluster.local
+        - document_name: kubernetes-etcd-n5
+          common_name: kubernetes-etcd-n5
+          hosts:
+            - n5
+            - 195.168.77.15
+            - 127.0.0.1
+            - localhost
+            - kubernetes-etcd.kube-system.svc.cluster.local
+        - document_name: kubernetes-etcd-n6
+          common_name: kubernetes-etcd-n6
+          hosts:
+            - n6
+            - 196.168.77.16
+            - 127.0.0.1
+            - localhost
+            - kubernetes-etcd.kube-system.svc.cluster.local
+        - document_name: kubernetes-etcd-n7
+          common_name: kubernetes-etcd-n7
+          hosts:
+            - n7
+            - 197.168.77.17
+            - 127.0.0.1
+            - localhost
+            - kubernetes-etcd.kube-system.svc.cluster.local
     kubernetes-etcd-peer:
       certificates:
         - document_name: kubernetes-etcd-genesis-peer
@@ -161,6 +221,38 @@ data:
             - 127.0.0.1
             - localhost
             - kubernetes-etcd.kube-system.svc.cluster.local
+        - document_name: kubernetes-etcd-n4-peer
+          common_name: kubernetes-etcd-n4-peer
+          hosts:
+            - n4
+            - 194.168.77.14
+            - 127.0.0.1
+            - localhost
+            - kubernetes-etcd.kube-system.svc.cluster.local
+        - document_name: kubernetes-etcd-n5-peer
+          common_name: kubernetes-etcd-n5-peer
+          hosts:
+            - n5
+            - 195.168.77.15
+            - 127.0.0.1
+            - localhost
+            - kubernetes-etcd.kube-system.svc.cluster.local
+        - document_name: kubernetes-etcd-n6-peer
+          common_name: kubernetes-etcd-n6-peer
+          hosts:
+            - n6
+            - 196.168.77.16
+            - 127.0.0.1
+            - localhost
+            - kubernetes-etcd.kube-system.svc.cluster.local
+        - document_name: kubernetes-etcd-n7-peer
+          common_name: kubernetes-etcd-n7-peer
+          hosts:
+            - n7
+            - 197.168.77.17
+            - 127.0.0.1
+            - localhost
+            - kubernetes-etcd.kube-system.svc.cluster.local
     calico-etcd:
       description: Certificates for Calico etcd client traffic
       certificates:
@@ -199,6 +291,38 @@ data:
             - 127.0.0.1
             - localhost
             - 10.96.232.136
+        - document_name: calico-etcd-n4
+          common_name: calico-etcd-n4
+          hosts:
+            - n4
+            - 192.168.77.14
+            - 127.0.0.1
+            - localhost
+            - 10.96.232.136
+        - document_name: calico-etcd-n5
+          common_name: calico-etcd-n5
+          hosts:
+            - n5
+            - 192.168.77.15
+            - 127.0.0.1
+            - localhost
+            - 10.96.232.136
+        - document_name: calico-etcd-n6
+          common_name: calico-etcd-n6
+          hosts:
+            - n6
+            - 192.168.77.16
+            - 127.0.0.1
+            - localhost
+            - 10.96.232.136
+        - document_name: calico-etcd-n7
+          common_name: calico-etcd-n7
+          hosts:
+            - n7
+            - 192.168.77.17
+            - 127.0.0.1
+            - localhost
+            - 10.96.232.136
         - document_name: calico-node
           common_name: calcico-node
     calico-etcd-peer:
@@ -233,6 +357,38 @@ data:
           hosts:
             - n3
             - 192.168.77.13
+            - 127.0.0.1
+            - localhost
+            - 10.96.232.136
+        - document_name: calico-etcd-n4-peer
+          common_name: calico-etcd-n4-peer
+          hosts:
+            - n4
+            - 192.168.77.14
+            - 127.0.0.1
+            - localhost
+            - 10.96.232.136
+        - document_name: calico-etcd-n5-peer
+          common_name: calico-etcd-n5-peer
+          hosts:
+            - n5
+            - 192.168.77.15
+            - 127.0.0.1
+            - localhost
+            - 10.96.232.136
+        - document_name: calico-etcd-n6-peer
+          common_name: calico-etcd-n6-peer
+          hosts:
+            - n6
+            - 192.168.77.16
+            - 127.0.0.1
+            - localhost
+            - 10.96.232.136
+        - document_name: calico-etcd-n7-peer
+          common_name: calico-etcd-n7-peer
+          hosts:
+            - n7
+            - 192.168.77.17
             - 127.0.0.1
             - localhost
             - 10.96.232.136
