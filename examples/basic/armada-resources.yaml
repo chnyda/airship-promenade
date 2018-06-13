@@ -138,7 +138,7 @@ data:
     type: git
     location: https://git.openstack.org/openstack/openstack-helm
     subpath: helm-toolkit
-    reference: master
+    reference: f902cd14fac7de4c4c9f7d019191268a6b4e9601
   dependencies: []
 ---
 schema: armada/Chart/v1
