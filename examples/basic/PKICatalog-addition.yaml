@@ -11,10 +11,10 @@ data:
     kubernetes:
       description: CA for Kubernetes components
       certificates:
-        - document_name: kubelet-node3
-          common_name: system:node:node3
+        - document_name: kubelet-n3
+          common_name: system:node:n3
           hosts:
-            - node3
+            - n3
             - 172.16.10.93
           groups:
             - system:nodes
