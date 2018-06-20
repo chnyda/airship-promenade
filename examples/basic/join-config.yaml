@@ -8,8 +8,8 @@ metadata:
     layer: site
 data:
   hostname: n0
-  ip: 172.16.10.90
-  join_ip: 172.16.10.91
+  ip: 192.168.10.90
+  join_ip: 192.168.10.91
   labels:
     dynamic:
       - ucp-control-plane=enabled
@@ -23,8 +23,8 @@ metadata:
     layer: site
 data:
   hostname: n1
-  ip: 172.16.10.91
-  join_ip: 172.16.10.90
+  ip: 192.168.10.91
+  join_ip: 192.168.10.90
   labels:
     dynamic:
       - calico-etcd=enabled
@@ -43,8 +43,8 @@ metadata:
     layer: site
 data:
   hostname: n2
-  ip: 172.16.10.92
-  join_ip: 172.16.10.90
+  ip: 192.168.10.92
+  join_ip: 192.168.10.90
   labels:
     dynamic:
       - calico-etcd=enabled
@@ -63,8 +63,8 @@ metadata:
     layer: site
 data:
   hostname: n3
-  ip: 172.16.10.93
-  join_ip: 172.16.10.91
+  ip: 192.168.10.93
+  join_ip: 192.168.10.91
   labels:
     dynamic:
       - calico-etcd=enabled
@@ -83,8 +83,8 @@ metadata:
     layer: site
 data:
   hostname: n4
-  ip: 172.16.10.94
-  join_ip: 172.16.10.90
+  ip: 192.168.10.94
+  join_ip: 192.168.10.90
   labels:
     dynamic:
       - calico-etcd=enabled
@@ -103,8 +103,8 @@ metadata:
     layer: site
 data:
   hostname: n5
-  ip: 172.16.10.95
-  join_ip: 172.16.10.90
+  ip: 192.168.10.95
+  join_ip: 192.168.10.90
   labels:
     dynamic:
       - calico-etcd=enabled
@@ -123,8 +123,8 @@ metadata:
     layer: site
 data:
   hostname: n6
-  ip: 172.16.10.96
-  join_ip: 172.16.10.90
+  ip: 192.168.10.96
+  join_ip: 192.168.10.90
   labels:
     dynamic:
       - calico-etcd=enabled
@@ -143,8 +143,8 @@ metadata:
     layer: site
 data:
   hostname: n7
-  ip: 172.16.10.97
-  join_ip: 172.16.10.90
+  ip: 192.168.10.97
+  join_ip: 192.168.10.90
   labels:
     dynamic:
       - calico-etcd=enabled

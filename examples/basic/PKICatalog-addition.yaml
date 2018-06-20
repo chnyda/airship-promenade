@@ -15,7 +15,7 @@ data:
           common_name: system:node:n3
           hosts:
             - n3
-            - 172.16.10.93
+            - 192.168.10.93
           groups:
             - system:nodes
 ...
